@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="peterperez.com"/>
+        <title> Peter Perez </title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+        <!--fontawesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--custom-->
+        <link rel="stylesheet" href="css/style.css"></link>
+    </head>
+    <style>
+        body, .btn-minimal {
+            font-family: 'Gaegu', cursive !important;
+        }
+        .rotate90 {
+            /*rotate the div from the top left corner -- imagine a pin in the corner and you spin it -90 degrees */
+            transform-origin: left top;
+            /* Safari */
+            -webkit-transform: rotate(-90deg);
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+            /* IE */
+            -ms-transform: rotate(-90deg);
+            /* Opera */
+            -o-transform: rotate(-90deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+        .btn-minimal {
+            display: inline-block;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 150px;
+            background-color: transparent; /* Green */
+            border: none;
+            color: black;
+        }
+        .row, ul {
+            margin: 0 !important;
+            padding: 1em;
+        }
+        .card {
+            border: transparent;
+        }
+    </style>
+    <body>
+        <div class="container-fluid ml-5">
+            <!-- navbar -->
+            <nav class="mr-auto">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="navbar-brand" style="font-size: 4em;">Pete Perez</h6>
+                    </div>
+                    <div class="col" style="margin-left:70%; margin-top: 1%;">
+                        <a href="https://www.instagram.com/bonanza_man/?hl=en" class="btn btn-outline-rainbow btn-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/jpeterperez?lang=en" class="btn btn-outline-lightblue btn-circle"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <!--sidebar-->
+            <div class="container fixed-top" style="position: fixed !important; margin-top: 43%; margin-left: -1%;">
+                <div class="btn-group rotate90 ml-2" style="position: fixed;">
+                    <button type="button" href="#contact" id="contactBtn" class="btn-minimal"><i>·Connect·</i></button>
+                    <button type="button" href="#timeline" id="timelineBtn" class="btn-minimal"><i>·My Story·</i></button>
+                    <button type="button" href="#slideshow" id="slideshowBtn" class="btn-minimal"><i>·My Life·</i></button>
+                    <button type="button" href="#aboutme" id="aboutmeBtn" class="btn-minimal"><i>·Who's Pete?·</i></button>
+                </div>
+            </div>
+            <!-- about me -->
+            <div class="card" style="margin-left: 1.25%; margin-right: 9.5%;">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="row">
+                            <a class="hover-glow" href="hudsonnash.com" style="margin: 2%;"><img class="rounded-circle" src="img/auxil/me.png"/></a>
+                            <p style="margin-top: 5.5%; font-size: 2em; font-weight: 100; font-family: calibri;">Lorem ipsum dolor sit amet! como te llamas? <br/> tu pelo esta muy bonita que ahora, muy muy flouriscimo, <br/> has un carro? me allowa a tomarte wfkjlbkdaljvbkljaebrkljvbke<br/>;wa;ekvbkejrvbkjwE;KJVBKJEBKJjbskjadbc;sbakdjvbk;jd fk.</p>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+            <!-- slideshow -->
+
+            <!-- timeline -->
+
+            <!-- contact -->
+        </div>
+    </body>
+</html>1
