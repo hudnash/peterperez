@@ -42,53 +42,98 @@
             border: none;
             color: black;
         }
-        .row, ul {
+        .row, .col, ul {
             margin: 0 !important;
-            padding: 1em;
+            padding: 0;
         }
         .card {
-            border: transparent;
+            width: 25%;
+            height: 400px;
+            padding: 1%;
         }
     </style>
-    <body>
-        <div class="container-fluid ml-5">
+    <body data-spy="scroll" data-target="#sidebar">
+        <div class="container-fluid ml-5 mt-1" style="padding-right: 0;">
             <!-- navbar -->
             <nav class="mr-auto">
                 <div class="row">
                     <div class="col">
-                        <h6 class="navbar-brand" style="font-size: 4em;">Pete Perez</h6>
+                        <h6 class="navbar-brand" style="font-size: 2em;">Pete Perez</h6>
                     </div>
-                    <div class="col" style="margin-left:70%; margin-top: 1%;">
-                        <a href="https://www.instagram.com/bonanza_man/?hl=en" class="btn btn-outline-rainbow btn-circle"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/jpeterperez?lang=en" class="btn btn-outline-lightblue btn-circle"><i class="fab fa-twitter"></i></a>
+                    <div class="col" style="margin-left:70% !important; margin-right: 3em !important;">
+                        <img style="width: 70%;" src="img/auxil/biplane.svg">
                     </div>
                 </div>
             </nav>
             <!--sidebar-->
-            <div class="container fixed-top" style="position: fixed !important; margin-top: 43%; margin-left: -1%;">
+            <div id="sidebar" class="content container fixed-top" style="position: fixed !important; margin-top: 18.5%; margin-left: -1%;">
                 <div class="btn-group rotate90 ml-2" style="position: fixed;">
-                    <button type="button" href="#contact" id="contactBtn" class="btn-minimal"><i>·Connect·</i></button>
-                    <button type="button" href="#timeline" id="timelineBtn" class="btn-minimal"><i>·My Story·</i></button>
-                    <button type="button" href="#slideshow" id="slideshowBtn" class="btn-minimal"><i>·My Life·</i></button>
-                    <button type="button" href="#aboutme" id="aboutmeBtn" class="btn-minimal"><i>·Who's Pete?·</i></button>
+                    <a href="#contact" id="contactBtn" class="btn-minimal"><i>·Connect·</i></a>
+                    <a href="#timeline" id="timelineBtn" class="btn-minimal"><i>·My Story·</i></a>
+                    <a href="#slideshow" id="slideshowBtn" class="btn-minimal"><i>·My Life·</i></a>
+                    <a href="#aboutme" id="aboutmeBtn" class="btn-minimal"><i>·Who's Pete?·</i></a>
                 </div>
             </div>
+            <br/><br/><br/>
             <!-- about me -->
-            <div class="card" style="margin-left: 1.25%; margin-right: 9.5%;">
-                <ul class="list-unstyled">
-                    <li>
-                        <div class="row">
-                            <a class="hover-glow" href="hudsonnash.com" style="margin: 2%;"><img class="rounded-circle" src="img/auxil/me.png"/></a>
-                            <p style="margin-top: 5.5%; font-size: 2em; font-weight: 100; font-family: calibri;">Lorem ipsum dolor sit amet! como te llamas? <br/> tu pelo esta muy bonita que ahora, muy muy flouriscimo, <br/> has un carro? me allowa a tomarte wfkjlbkdaljvbkljaebrkljvbke<br/>;wa;ekvbkejrvbkjwE;KJVBKJEBKJjbskjadbc;sbakdjvbk;jd fk.</p>
-                        </div>
-                    </li>
-                </ul> 
+            <div id="aboutme" class="container-flex" style="margin-left: 1.25%; margin-right: 9.5%;">
+                <div class="row">
+                    <div class="col">
+                        <a style="margin: 2%; position: relative; width: 50%; height: auto;"><img title="·Who's Pete?·" class="rounded-circle" src="img/auxil/me.png"/></a>
+                    </div>
+                    <div class="col">
+                        <p style="font-family: Calibri; font-size: 2em; font-weight: 100; margin: 0; padding: 6.25% 0; text-align: justify;">Hello, there! I'm a pilot, an investor, and a proud grandfather with three amazing grandchildren -- one of whom made this site! Enjoy!</p>
+                    </div>
+                </div> 
             </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <!-- slideshow -->
-
+            <div id="slideshow" class="container-flex" style="margin-right: 5%; margin-left: 1%;">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- wrapper for slides -->
+                    <div class="carousel-inner col-md-auto" role="listbox" style="width: 100%;">
+                        <div class="carousel-item active">
+                            <picture>
+                                <source srcset="img/auxil/2000x500/me-at-the-aiche-convention-2000x500.jpg" media="(min-width: 1400px)"> 				 <!-- 2000x500 -->
+                                <source srcset="img/auxil/1400x500/me-at-the-aiche-convention-1400x500.jpg" media="(min-width: 769px)"> 				 <!-- 1400x500 -->
+                                <source srcset="img/auxil/800x500/me-at-the-aiche-convention-800x500.jpg" media="(min-width: 577px)"> 					 <!-- 800x500 -->
+                                <img srcset="img/auxil/600x500/me-at-the-aiche-convention-600x500.jpg" alt="responsive image" class="d-block img-fluid"> <!-- 600x500 -->
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="img/auxil/2000x500/repsol-2018-2000x500.jpg" media="(min-width: 1400px)">
+                                <source srcset="img/auxil/1400x500/repsol-2018-1400x500.jpg" media="(min-width: 769px)">
+                                <source srcset="img/auxil/800x500/repsol-2018-800x500.jpg" media="(min-width: 577px)">
+                                <img srcset="img/auxil/600x500/repsol-2018-600x500.jpg" alt="responsive image" class="d-block img-fluid">
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="img/auxil/2000x500/tulane-trip-2000x500.jpg" media="(min-width: 1400px)">
+                                <source srcset="img/auxil/1400x500/tulane-trip-1400x500.jpg" media="(min-width: 769px)">
+                                <source srcset="img/auxil/800x500/tulane-trip-1400x500.jpg" media="(min-width: 577px)">
+                                <img srcset="img/auxil/600x500/tulane-trip-600x500.jpg" alt="responsive image" class="d-block img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <!-- timeline -->
-
+            <div class="container-flex" id="timeline">
+                <iframe style="width: 100%; height: auto; padding: 0; border: none; overflow: hidden;" src="timeline/index.html"></iframe>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <!-- contact -->
+            <div class="container-flex text-center" id="contact">
+                <h4 style="text-shadow: -2px 2px rgba(62,113,187, 0.3); margin: 5%;">Connect with Me</h4>
+                <a href="https://twitter.com/jpeterperez?lang=en" class="btn btn-outline-lightblue btn-circle" style="width: 10%; margin: 2%;"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/bonanza_man/?hl=en" class="btn btn-outline-rainbow btn-circle" style="width: 10%; margin: 2%;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/peter-perez-a2aa94/" class="btn btn-outline-linkedinblue btn-circle" style="width: 10%; margin: 2%;"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:2815078867" class="btn btn-outline-red btn-circle" style="width: 10%; margin: 2%;"><i class="fas fa-phone-square"></i></a>
+                <a href="mailto:peter@polyseed.com" class="btn btn-outline-aqua btn-circle" style="width: 10%; margin: 2%;"><i class="fas fa-envelope-square"></i></a>
+            </div>
         </div>
     </body>
-</html>1
+</html>

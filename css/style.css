@@ -1,3 +1,12 @@
+.btn-outline-aqua:hover{
+	background: none;
+	border: 1px solid aquamarine;
+	color: aquamarine;
+}
+.btn-outline-aqua{
+	background: aquamarine;
+	color: rgb(255,255,255);
+}
 .btn-outline-red:hover{
 	background: none;
 	border: 1px solid rgb(237, 41, 57);
